@@ -5,7 +5,11 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // Use CORS middleware to allow all origins by default
-app.use(cors());
+app.use(cors(
+  origin:["https://bajaj-project-frontend-eta.vercel.app/"],
+  methods:["POST", "GET"],
+  credentials:true
+));
 
 // Middleware for JSON parsing
 app.use(bodyParser.json());
