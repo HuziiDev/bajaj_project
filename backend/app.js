@@ -6,7 +6,7 @@ const port = process.env.PORT || 5000;
 
 // Use CORS middleware to allow all origins by default
 app.use(cors(
-  origin:["https://bajaj-project-frontend-eta.vercel.app"],
+  origin:["https://bajaj-project-frontend-eta.vercel.app/bfhl"],
   methods:["POST", "GET"],
   credentials:true
 ));
