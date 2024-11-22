@@ -5,11 +5,11 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // Use CORS middleware to allow all origins by default
-app.use(cors({
-  origin: "https://bajaj-project-frontend-eta.vercel.app",  // Your frontend URL
-  methods: ["POST", "GET"],
-  credentials: true
-}));
+app.use(cors(
+  origin:["https://bajaj-project-frontend-eta.vercel.app"],
+  methods:["POST", "GET"],
+  credentials:true
+));
 
 // Middleware for JSON parsing
 app.use(bodyParser.json());
@@ -99,5 +99,5 @@ app.post("/bfhl", (req, res) => {
 
 // Start server
 app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+  console.log(Server is running on http://localhost:${port});
 });
