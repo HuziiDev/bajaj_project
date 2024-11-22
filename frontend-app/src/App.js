@@ -10,7 +10,7 @@ const App = () => {
   const handleJsonSubmit = async (data) => {
     try {
       // Replace with your API URL
-      const res = await fetch('http://localhost:5000/bfhl', {
+      const res = await fetch('https://bajaj-project-api.vercel.app/bfhl', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
